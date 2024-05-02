@@ -13,6 +13,15 @@ Read the [Python Set Up Guide](docs/python_set_up.md) for a detailed description
 
 1. Click on the green button "Use this template" on GitHub.
 2. Open VS Code and clone the repository.
+3. Install pipx on your user environment:
+    - `python3 -m pip install --user pipx`
+    - `python3 -m pipx ensurepath`
+    - Restart your terminal.
+
+    *If you experience problems installing pipx, uninstall previoius versions of pipx and try again with commands above.*
+
+    `python3 -m pip uninstall pipx`
+    
 3. Install global tools for linting etc. 
     - `make help` to see the available commands.
     - `make install-global` to install packages such as pre-commit, poetry, and black globally using pipx.
@@ -33,6 +42,7 @@ To set up a Poetry virtual environment, follow these steps:
 cd /path/to/your/project
 
 # Install the project dependencies
+# The pypoetry env uses ca. 5.6 GB of disk space
 poetry install
 
 # Activate the virtual environment
@@ -75,28 +85,6 @@ uploaded = files.upload()
 ```
 
 
-### TODO
 
-7. Run the tests:
-    - `make poetry-test` to run all tests.
-    - Run from VS Code: testing > configure python tests > pytest
-8. Run pre-commit hooks and commit your changes:
-    - `git add .` to add all files to the staging area.
-    - `make pre-commit` to run pre-commit on all files.
-    - `git commit -m "commit message"` to commit your changes.
-
-
-### PyTorch Workflow
-
-
-
-
-
-
-### References
--
--
-
-
-
+## References
 
