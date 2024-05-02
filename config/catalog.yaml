@@ -1,0 +1,66 @@
+# ${PROJECT}: path/to/local/project/catalog
+# stored in user-dir/.env or in the project root
+
+# ----------------------------
+# DATA CATALOG
+# ----------------------------
+
+test:
+  type: csv
+  filepath: ${DATA}/tmp/test.csv
+
+fylke:
+    type: filegdb
+    filepath: "${NINA_R}/GeoSpatialData/AdministrativeUnits/Norway_AdministrativeUnits/Original/Norway_County/Administrative_enheter_fylker_2024_FGDB-format/Basisdata_0000_Norge_25833_Fylker2024_FGDB.gdb"
+    layer: fylke
+    year: 2024
+
+bioclimatic_zones:
+    type: filegdb
+    filepath: "${NINA_R}/GeoSpatialData/BiogeographicalRegions/Norway_PCA_klima/Original/20170614_Bioklima/20170614_Bioklima.gdb"
+    layer: Soner2017
+    year: 2017
+
+# ----------------------------
+# METADATA
+# ----------------------------
+
+projectMetadata:
+    admin:
+        projectID: 
+        projectShortTitle: "pytorch-template"
+        projectTitle: "Pytorch Template"
+        projectKeywords: "pytorch; deep-learning; template"
+        projectType: "Skill development"
+        projectLanguage: "English"
+        projectDescription: "Template repository for pytorch projects"
+        projectFunding: 
+        projectPeriod: 
+    license:
+        name: The MIT License (MIT)
+        url: https://opensource.org/license/mit/
+    location:
+        geographicCoverage: 
+        studyAreaDescription: 
+        designDescription: 
+    contact:
+        projectLeader:
+            firstName: "Willeke"
+            lastName: "A'Campo"
+            organizationName: "Norsk Institutt for Naturforskning"
+            email: 
+        dataManager: 
+            firstName: "Willeke"
+            lastName: "A'Campo"
+            organizationName: "Norsk Institutt for Naturforskning"
+            email: 
+        participant:
+            firstName: 
+            lastName: 
+            organizationName: 
+            email: 
+    nameURL: "Name of Documentation"
+    URL: "link/to/documentation/metadata/gh-pages"
+    
+
+

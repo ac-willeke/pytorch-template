@@ -1,0 +1,69 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pytorch-template"
+version = "0.1.0"
+description = "Template project for PyTroch development in Linux."
+authors = ["Willeke A'Campo <willeke.acampo@nina.no>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ac-willeke/pytorch-template"
+keywords = ["template", "packaging"]
+
+packages = [
+    {include="src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+pyaml-env = "^1.2.1"
+jupyter = "^1.0.0"
+torch = "^2.2.2"
+matplotlib = "^3.8.4"
+torchvision = "^0.17.2"
+scikit-learn = "^1.4.2"
+pillow = "^10.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+black = "^24.4.0"
+isort = "^5.13.2"
+ruff = "^0.3.7"
+pyment = "^0.3.3"
+
+[tool.black]
+# https://github.com/psf/black
+line-length = 88
+color = true
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | env
+    | venv
+)/
+'''
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
+profile = "black"
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/settings
+fix = true
+ignore = ["E501"]
+exclude = [
+    ".git",
+    ".env",
+    ".venv"
+]
