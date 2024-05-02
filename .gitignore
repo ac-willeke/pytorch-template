@@ -83,6 +83,7 @@ temp/*
 !temp/.gitkeep
 log/*
 !log/.gitkeep
+docs/tmp/*
 
 notebooks/course-notebooks/*
 
