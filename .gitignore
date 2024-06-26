@@ -84,8 +84,11 @@ temp/*
 log/*
 !log/.gitkeep
 docs/tmp/*
+data/*
+!data/.gitkeep
 
-notebooks/course-notebooks/*
+# all .zip files
+*.zip
 
 # vscode
 .vscode

@@ -5,9 +5,17 @@
 # DATA CATALOG
 # ----------------------------
 
+project_data:
+    type: folder
+    filepath: ${DATA}
+
 test:
+  type: folder
+  filepath: ${DATA}/test-multiclass-segmentation/dset-s2-grunnkart
+
+test_colab:
   type: csv
-  filepath: ${DATA}/tmp/test.csv
+  filepath: ${DATA}/california_housing_test.csv
 
 fylke:
     type: filegdb
@@ -27,40 +35,37 @@ bioclimatic_zones:
 
 projectMetadata:
     admin:
-        projectID: 
+        projectID:
         projectShortTitle: "pytorch-template"
         projectTitle: "Pytorch Template"
         projectKeywords: "pytorch; deep-learning; template"
         projectType: "Skill development"
         projectLanguage: "English"
         projectDescription: "Template repository for pytorch projects"
-        projectFunding: 
-        projectPeriod: 
+        projectFunding:
+        projectPeriod:
     license:
         name: The MIT License (MIT)
         url: https://opensource.org/license/mit/
     location:
-        geographicCoverage: 
-        studyAreaDescription: 
-        designDescription: 
+        geographicCoverage:
+        studyAreaDescription:
+        designDescription:
     contact:
         projectLeader:
             firstName: "Willeke"
             lastName: "A'Campo"
             organizationName: "Norsk Institutt for Naturforskning"
-            email: 
-        dataManager: 
+            email:
+        dataManager:
             firstName: "Willeke"
             lastName: "A'Campo"
             organizationName: "Norsk Institutt for Naturforskning"
-            email: 
+            email:
         participant:
-            firstName: 
-            lastName: 
-            organizationName: 
-            email: 
+            firstName:
+            lastName:
+            organizationName:
+            email:
     nameURL: "Name of Documentation"
     URL: "link/to/documentation/metadata/gh-pages"
-    
-
-

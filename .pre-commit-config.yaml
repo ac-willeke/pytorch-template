@@ -1,12 +1,12 @@
 repos:
+# general utility hooks
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.3.0
     hooks:
     -   id: check-yaml
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
-
-# On windows security set-up might not allow referencing to external repos.
+# python hooks
 -   repo: https://github.com/psf/black
     rev: 22.10.0
     hooks:
@@ -15,4 +15,5 @@ repos:
   rev: v0.0.286
   hooks:
     - id: ruff
-      types_or: [python, pyi, jupyter]
+      types_or: [python]
+# no hooks on jupyter notebooks
