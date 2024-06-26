@@ -11,7 +11,7 @@ project_data:
 
 test:
   type: folder
-  filepath: ${DATA}/test-multiclass-segmentation/dset-s2-grunnkart
+  filepath: ${DATA}/test.csv
 
 test_colab:
   type: csv
