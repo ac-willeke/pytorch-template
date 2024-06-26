@@ -9,7 +9,7 @@ The following files are included in this template:
 
 2. Project config files:
     - [config/.env](../config/template.env) to set your environment variables
-    - [config/catalog.yaml](../config/config.yaml) to store your data paths and project metadata. 
+    - [config/catalog.yaml](../config/config.yaml) to store your data paths and project metadata.
     - [config/parameters.yaml](../config/params.yaml) to set your model parameters.
     - [config/logging.yaml](../config/logging.yaml) to set your logging configuration
 
@@ -24,8 +24,8 @@ The following files are included in this template:
 5. A test-suite using the pytest framework to test the *src package* in this template ([here](tests/test_utils.py)).
 
 6. Documentation:
-    
-    Guides with documentation on: 
+
+    Guides with documentation on:
     - how to set up a python project in linux
     - how to use classes and methods in python
     - cheatsheet for linux shell commands
@@ -43,13 +43,13 @@ The following files are included in this template:
     │   ├── logging.yaml
     │   └── parameters.yaml
     ├── docs
-    │   ├── changelog.md        
-    │   ├── todo.md             
-    │   └── project_structure.md  
+    │   ├── changelog.md
+    │   ├── todo.md
+    │   └── project_structure.md
     ├── log
-    │   └── .gitkeep            
+    │   └── .gitkeep
     ├── notebooks
-    │   ├── 01_notebook.ipynb 
+    │   ├── 01_notebook.ipynb
     │   └── 02_notebook.ipynb
     ├── pilot_project
     │   ├── main.py
