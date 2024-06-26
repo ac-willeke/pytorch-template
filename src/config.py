@@ -1,9 +1,11 @@
 """Project configuration"""
 
+import logging
 import os
 from pathlib import Path
 
-from .utils import yaml_load
+from src.logger import setup_logging
+from src.utils import yaml_load
 
 # --------------------------------------------------------------------------- #
 # Load secure variables from .env file
@@ -39,8 +41,12 @@ def load_parameters():
 # --------------------------------------------------------------------------- #
 
 if __name__ == "__main__":
+    # set up logging
+    setup_logging()
+    logger = logging.getLogger(__name__)
+
     # load catalog
-    print("Loading catalog...")
+    logger.info("Loading catalog...")
     catalog = load_catalog()
     parameters = load_parameters()
-    print(catalog["test"]["filepath"])
+    logger.info(catalog["project_data"]["filepath"])
